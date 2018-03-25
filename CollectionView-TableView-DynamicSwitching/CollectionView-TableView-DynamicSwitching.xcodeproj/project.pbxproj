@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D07939112067454D00454C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D07939102067454D00454C3A /* main.m */; };
+		D07939142067454D00454C3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D07939132067454D00454C3A /* AppDelegate.m */; };
+		D07939172067454D00454C3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07939162067454D00454C3A /* ViewController.m */; };
+		D079391A2067454D00454C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07939182067454D00454C3A /* Main.storyboard */; };
+		D079391C2067454D00454C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D079391B2067454D00454C3A /* Assets.xcassets */; };
+		D079391F2067454D00454C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D079391D2067454D00454C3A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D079390C2067454D00454C3A /* CollectionView-TableView-DynamicSwitching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollectionView-TableView-DynamicSwitching.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07939102067454D00454C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D07939122067454D00454C3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D07939132067454D00454C3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D07939152067454D00454C3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D07939162067454D00454C3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D07939192067454D00454C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D079391B2067454D00454C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D079391E2067454D00454C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D07939202067454D00454C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D07939092067454D00454C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D07939032067454D00454C3A = {
+			isa = PBXGroup;
+			children = (
+				D079390E2067454D00454C3A /* CollectionView-TableView-DynamicSwitching */,
+				D079390D2067454D00454C3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D079390D2067454D00454C3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D079390C2067454D00454C3A /* CollectionView-TableView-DynamicSwitching.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D079390E2067454D00454C3A /* CollectionView-TableView-DynamicSwitching */ = {
+			isa = PBXGroup;
+			children = (
+				D07939122067454D00454C3A /* AppDelegate.h */,
+				D07939132067454D00454C3A /* AppDelegate.m */,
+				D07939152067454D00454C3A /* ViewController.h */,
+				D07939162067454D00454C3A /* ViewController.m */,
+				D07939182067454D00454C3A /* Main.storyboard */,
+				D079391B2067454D00454C3A /* Assets.xcassets */,
+				D079391D2067454D00454C3A /* LaunchScreen.storyboard */,
+				D07939202067454D00454C3A /* Info.plist */,
+				D079390F2067454D00454C3A /* Supporting Files */,
+			);
+			path = "CollectionView-TableView-DynamicSwitching";
+			sourceTree = "<group>";
+		};
+		D079390F2067454D00454C3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D07939102067454D00454C3A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D079390B2067454D00454C3A /* CollectionView-TableView-DynamicSwitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D07939232067454D00454C3A /* Build configuration list for PBXNativeTarget "CollectionView-TableView-DynamicSwitching" */;
+			buildPhases = (
+				D07939082067454D00454C3A /* Sources */,
+				D07939092067454D00454C3A /* Frameworks */,
+				D079390A2067454D00454C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CollectionView-TableView-DynamicSwitching";
+			productName = "CollectionView-TableView-DynamicSwitching";
+			productReference = D079390C2067454D00454C3A /* CollectionView-TableView-DynamicSwitching.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D07939042067454D00454C3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = sayyou2012;
+				TargetAttributes = {
+					D079390B2067454D00454C3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D07939072067454D00454C3A /* Build configuration list for PBXProject "CollectionView-TableView-DynamicSwitching" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D07939032067454D00454C3A;
+			productRefGroup = D079390D2067454D00454C3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D079390B2067454D00454C3A /* CollectionView-TableView-DynamicSwitching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D079390A2067454D00454C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D079391F2067454D00454C3A /* LaunchScreen.storyboard in Resources */,
+				D079391C2067454D00454C3A /* Assets.xcassets in Resources */,
+				D079391A2067454D00454C3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D07939082067454D00454C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07939172067454D00454C3A /* ViewController.m in Sources */,
+				D07939142067454D00454C3A /* AppDelegate.m in Sources */,
+				D07939112067454D00454C3A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D07939182067454D00454C3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D07939192067454D00454C3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D079391D2067454D00454C3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D079391E2067454D00454C3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D07939212067454D00454C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D07939222067454D00454C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D07939242067454D00454C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CollectionView-TableView-DynamicSwitching/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sayyou2012.CollectionView-TableView-DynamicSwitching";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D07939252067454D00454C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CollectionView-TableView-DynamicSwitching/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sayyou2012.CollectionView-TableView-DynamicSwitching";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D07939072067454D00454C3A /* Build configuration list for PBXProject "CollectionView-TableView-DynamicSwitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07939212067454D00454C3A /* Debug */,
+				D07939222067454D00454C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D07939232067454D00454C3A /* Build configuration list for PBXNativeTarget "CollectionView-TableView-DynamicSwitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07939242067454D00454C3A /* Debug */,
+				D07939252067454D00454C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D07939042067454D00454C3A /* Project object */;
+}
