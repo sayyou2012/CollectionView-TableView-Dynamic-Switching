@@ -8,8 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, CurrentLayoutType)
+{
+    CurrentLayoutTypeCollectionView,
+    CurrentLayoutTypeTableView
+};
+
 @interface SAYDynamicSwitchingCollectionView : UICollectionView
 
+@property (nonatomic, assign, readonly) CurrentLayoutType currentLayoutType;// 默认为CurrentLayoutTypeCollectionView
+
+/**
+ *  根据collectionViewFlowLayout和tableViewLayoutItemSize进行初始化
+ *
+ *  @param collectionViewFlowLayout     collectionView布局
+ *  @param tableViewLayoutItemSize      tableview布局中的item的大小
+ *
+ *  @return SAYDynamicSwitchingCollectionView
+ */
 - (instancetype)initWithCollectionViewFlowLayout:(UICollectionViewFlowLayout *)collectionViewFlowLayout
                          tableViewLayoutItemSize:(CGSize)tableViewLayoutItemSize;
 

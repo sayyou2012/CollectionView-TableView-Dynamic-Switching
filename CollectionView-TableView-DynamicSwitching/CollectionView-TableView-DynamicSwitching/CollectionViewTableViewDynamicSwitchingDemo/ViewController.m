@@ -14,7 +14,6 @@
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) SAYDynamicSwitchingCollectionView *collectionView;
-@property (nonatomic, assign) BOOL flag;
 
 @end
 
@@ -28,7 +27,7 @@ static CGFloat const kTableViewItemHeight = 100;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"切换" style:UIBarButtonItemStylePlain target:self action:@selector(switchStyle)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"切换" style:UIBarButtonItemStylePlain target:self action:@selector(switchLayout)];
     
     UICollectionViewFlowLayout *collectionViewFlowLayout = [[UICollectionViewFlowLayout alloc] init];
     CGFloat width = (self.view.frame.size.width - 2) * 0.5;
@@ -63,17 +62,24 @@ static CGFloat const kTableViewItemHeight = 100;
 {
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellReuseIdentifier forIndexPath:indexPath];
     //TODO:根据SAYDynamicSwitchingCollectionView当前的布局样式来展示对应图片
-    cell.cellImage = [UIImage imageNamed:@"IMG_0250"];
+    SAYDynamicSwitchingCollectionView *dynamicSwitchCollectionView = (SAYDynamicSwitchingCollectionView *)collectionView;
+    if (dynamicSwitchCollectionView.currentLayoutType == CurrentLayoutTypeCollectionView)
+    {
+        cell.cellImage = [UIImage imageNamed:@"IMG_0250"];
+    }
+    else
+    {
+        cell.cellImage = [UIImage imageNamed:@"IMG_0251"];
+    }
     
     return cell;
 }
 
-- (void)switchStyle
+- (void)switchLayout
 {
     NSArray *visibleCells = [self.collectionView visibleCells];
 
-    self.flag = !_flag;
-    if (_flag)
+    if (self.collectionView.currentLayoutType == CurrentLayoutTypeCollectionView)
     {
         [self.collectionView switchTableViewLayoutAnimated:YES];
         [visibleCells enumerateObjectsUsingBlock:^(CollectionViewCell *  _Nonnull cell, NSUInteger idx, BOOL * _Nonnull stop) {

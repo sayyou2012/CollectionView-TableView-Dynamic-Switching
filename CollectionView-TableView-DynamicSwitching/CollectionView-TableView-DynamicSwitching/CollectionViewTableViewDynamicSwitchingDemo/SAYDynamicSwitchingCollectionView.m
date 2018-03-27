@@ -14,6 +14,7 @@
 @property (nonatomic, strong) SAYTableViewFlowLayout *tableViewFlowLayout;
 @property (nonatomic, strong) UICollectionViewLayout *collectionViewFlowLayout;
 @property (nonatomic, assign) CGSize tableViewLayoutItemSize;
+@property (nonatomic, assign, readwrite) CurrentLayoutType currentLayoutType;
 
 @end
 
@@ -28,6 +29,7 @@
         self.collectionViewLayout = collectionViewFlowLayout;
         _collectionViewFlowLayout = collectionViewFlowLayout;
         _tableViewLayoutItemSize  = tableViewLayoutItemSize;
+        _currentLayoutType        = CurrentLayoutTypeCollectionView;
     }
     
     return self;
@@ -51,11 +53,13 @@
 
 - (void)switchTableViewLayoutAnimated:(BOOL)animated
 {
+    self.currentLayoutType = CurrentLayoutTypeTableView;
     [self setCollectionViewLayout:self.tableViewFlowLayout animated:animated];
 }
 
 - (void)switchCollectionViewLayoutAnimated:(BOOL)animated
 {
+    self.currentLayoutType = CurrentLayoutTypeCollectionView;
     [self setCollectionViewLayout:self.collectionViewFlowLayout animated:animated];
 }
 
