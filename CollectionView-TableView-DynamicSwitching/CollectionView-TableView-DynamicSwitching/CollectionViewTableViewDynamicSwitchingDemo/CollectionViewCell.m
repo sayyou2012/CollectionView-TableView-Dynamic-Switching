@@ -8,12 +8,23 @@
 
 #import "CollectionViewCell.h"
 
+@interface CollectionViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@end
+
 @implementation CollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.backgroundColor = [UIColor orangeColor];
+}
+
+- (void)setCellImage:(UIImage *)cellImage
+{
+    _cellImage = cellImage;
+    self.imageView.image = cellImage;
 }
 
 @end

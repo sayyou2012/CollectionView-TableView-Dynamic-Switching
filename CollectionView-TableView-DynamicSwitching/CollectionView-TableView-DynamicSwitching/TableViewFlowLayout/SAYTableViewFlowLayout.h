@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, CurrentLayoutType)
+{
+    CurrentLayoutTypeTableView,
+    CurrentLayoutTypeCollectionView
+};
+
 @interface SAYTableViewFlowLayout : UICollectionViewFlowLayout
+
+//TODO:增加只读属性，currentLayout
 
 /**
  *  根据cell的size和cell的最小间距进行初始化

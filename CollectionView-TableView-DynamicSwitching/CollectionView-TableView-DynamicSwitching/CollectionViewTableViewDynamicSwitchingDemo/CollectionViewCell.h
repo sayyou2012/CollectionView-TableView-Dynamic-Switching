@@ -10,4 +10,6 @@
 
 @interface CollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, weak) UIImage *cellImage;
+
 @end

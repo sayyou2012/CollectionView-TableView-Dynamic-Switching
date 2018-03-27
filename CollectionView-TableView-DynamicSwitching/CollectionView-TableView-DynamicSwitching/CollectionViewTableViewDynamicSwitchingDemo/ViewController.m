@@ -36,8 +36,8 @@ static CGFloat const kTableViewItemHeight = 100;
     collectionViewFlowLayout.minimumLineSpacing = 2.0f;
     collectionViewFlowLayout.minimumInteritemSpacing = 2.0f;
     
-    
     self.collectionView = [[SAYDynamicSwitchingCollectionView alloc] initWithCollectionViewFlowLayout:collectionViewFlowLayout tableViewLayoutItemSize:CGSizeMake(self.view.frame.size.width, kTableViewItemHeight)];
+    self.collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:self.collectionView];
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
@@ -61,23 +61,32 @@ static CGFloat const kTableViewItemHeight = 100;
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellReuseIdentifier forIndexPath:indexPath];
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellReuseIdentifier forIndexPath:indexPath];
+    //TODO:根据SAYDynamicSwitchingCollectionView当前的布局样式来展示对应图片
+    cell.cellImage = [UIImage imageNamed:@"IMG_0250"];
     
     return cell;
 }
 
 - (void)switchStyle
 {
+    NSArray *visibleCells = [self.collectionView visibleCells];
+
     self.flag = !_flag;
     if (_flag)
     {
         [self.collectionView switchTableViewLayoutAnimated:YES];
+        [visibleCells enumerateObjectsUsingBlock:^(CollectionViewCell *  _Nonnull cell, NSUInteger idx, BOOL * _Nonnull stop) {
+            cell.cellImage = [UIImage imageNamed:@"IMG_0251"];
+        }];
 
     }
     else
     {
         [self.collectionView switchCollectionViewLayoutAnimated:YES];
-
+        [visibleCells enumerateObjectsUsingBlock:^(CollectionViewCell *  _Nonnull cell, NSUInteger idx, BOOL * _Nonnull stop) {
+            cell.cellImage = [UIImage imageNamed:@"IMG_0250"];
+        }];
     }
 }
 
