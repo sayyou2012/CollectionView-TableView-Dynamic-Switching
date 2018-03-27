@@ -106,6 +106,7 @@
     NSInteger sectionCount = [self.collectionView numberOfSections];
     
     CGFloat y = 0;
+    self.allItemsCount = 0;
     
     for (int section = 0; section < sectionCount; section++)
     {
